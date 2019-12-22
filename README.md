@@ -93,4 +93,4 @@ You can add files such as ``banned-players.json``, ``banned-ips.json``, ``ops.js
 
 You may create your own server on your computer with your own plugins, worlds then ZIP it to a file with the name **backup.zip**. Upload it to dropbox and you will have your own configured server.
 Those that starts with "world".
-Example: world1 world world_nether world_the_end
+Example: world_flat world world_nether world_the_end
