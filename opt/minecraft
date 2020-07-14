@@ -46,7 +46,7 @@ unzip backup
 rm backup.zip
 files="mstore plugins server.properties bukkit.yml spigot.yml paper.yml banned-ips.json banned-players.json whitelist.json permissions.yml ops.json commands.yml"
 worlds="$(ls | grep world | tr "\n" " ")"
-eval "while true; do sleep 300; zip -r backup $worlds $files; ./backup.sh delete backup.zip; ./backup.sh upload backup.zip /; rm backup.zip; done &"
+eval "while true; do sleep 300; zip -r backup $worlds $files; ./backup.sh upload backup.zip backup2.zip; ./backup.sh delete backup.zip; ./backup.sh move backup2.zip backup.zip; rm backup.zip; done &"
 echo " done"
 dropbox_pid=$!
 
